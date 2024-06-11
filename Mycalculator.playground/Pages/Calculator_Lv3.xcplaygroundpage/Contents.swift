@@ -34,10 +34,9 @@ class DivideOperation {
 }
 
 // 연산 클래스들 사용해서 Calculator 클래스와 관계 맺기
-
 class Calculator {
     let addOperation = AddOperation()
-    let subtractOperation = SubstractOperation()
+    let substractOperation = SubstractOperation()
     let multiplyOperation = MultiplyOperation()
     let divideOperation = DivideOperation()
     
@@ -48,7 +47,7 @@ class Calculator {
         case "+":
             return addOperation.operate(firstNumber: firstNumber, secondNumber: secondNumber)
         case "-":
-            return subtractOperation.operate(firstNumber: firstNumber, secondNumber: secondNumber)
+            return substractOperation.operate(firstNumber: firstNumber, secondNumber: secondNumber)
         case "*":
             return multiplyOperation.operate(firstNumber: firstNumber, secondNumber: secondNumber)
         case "/":
@@ -61,19 +60,17 @@ class Calculator {
 }
 
 
-
-
 let calculator = Calculator(
     // 프로퍼티 초기화
 )
 let addResult = calculator.calculate(operate: "+", firstNumber: 5, secondNumber: 2)  // 덧셈 연산
-let subtractResult = calculator.calculate(operate: "-", firstNumber: 14, secondNumber: 9)  // 뺄셈 연산
+let substractResult = calculator.calculate(operate: "-", firstNumber: 14, secondNumber: 9)  // 뺄셈 연산
 let multiplyResult = calculator.calculate(operate: "*", firstNumber: 4, secondNumber: 17)  // 곱셈 연산
 let divideResult = calculator.calculate(operate: "/", firstNumber: 7, secondNumber: 6)   // 나눗셈 연산
 
 
 print("addResult : \(addResult)")
-print("subtractResult : \(subtractResult)")
+print("substractResult : \(substractResult)")
 print("multiplyResult : \(multiplyResult)")
 print("divideResult : \(divideResult)")
 

@@ -27,12 +27,12 @@ class Calculator {
 let calculator = Calculator()
 
 let addResult = calculator.calculate(operate: "+", firstNumber: 5, secondNumber: 2)
-let subtractResult = calculator.calculate(operate: "-", firstNumber: 14, secondNumber: 9)
+let substractResult = calculator.calculate(operate: "-", firstNumber: 14, secondNumber: 9)
 let multiplyResult = calculator.calculate(operate: "*", firstNumber: 4, secondNumber: 17)
 let divideResult = calculator.calculate(operate: "/", firstNumber: 7, secondNumber: 6)
 
 
 print("addResult : \(addResult)")
-print("subtractResult : \(subtractResult)")
+print("substractResult : \(substractResult)")
 print("multiplyResult : \(multiplyResult)")
 print("divideResult : \(divideResult)")
